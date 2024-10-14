@@ -1,2 +1,2 @@
-# Wordlister
-Python Wordlister created without librarys
+# Wordlist Generator
+Python Wordlist Generator created without librarys
