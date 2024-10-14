@@ -1,5 +1,5 @@
-print("Welcome to Wordlister")
-print("Python Wordlister created without librarys")
+print("Welcome to Wordlist Generator")
+print("Python Wordlist Generator created without librarys")
 while True:
     try:
         print("")
