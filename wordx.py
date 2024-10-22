@@ -2,7 +2,6 @@ print("Welcome to Wordlist Generator")
 print("Python Wordlist Generator created without librarys")
 while True:
     try:
-        print("")
         Parameter_counter = int(input("How many parameters to enter? (1, 2 ): "))
         if 1 <= Parameter_counter <= 2:
             # 3,4
@@ -19,7 +18,6 @@ Parameter1 = "o"
 Parameter2 = "n"
 Parameter3 = "e"
 Parameter4 = "o"
-print("")
 while True:
     print("Enter Parameter/Parameters")
     if Parameter_counter == 1:
@@ -32,7 +30,6 @@ while True:
             break
     elif Parameter_counter == 2:
         Parameter1 = input("First Parameter:")
-        print("")
         Parameter2 = input("Second Parameter:")
         for i1 in Parameter1:
             Parameter1_length = Parameter1_length + 1
@@ -45,9 +42,7 @@ while True:
             break
     elif Parameter_counter == 3:
         Parameter1 = input("First Parameter:")
-        print("")
         Parameter2 = input("Second Parameter:")
-        print("")
         Parameter3 = input("Third Parameter:")
         for i1 in Parameter1:
             Parameter1_length = Parameter1_length + 1
@@ -83,37 +78,28 @@ while True:
             break
     else:
         print("Enter a valid parameter.")
-print("")
 while True:
     Passwd_long = int(input("How many digits should the password be?(6,7,8,9) :"))
     if Parameter_counter == 1:
         add1 = Passwd_long - Parameter1_length
-        if 0<=add1<=9 :
+        if 0<add1<=9 :
             if 6<=Passwd_long<=9:
                 break
             else:
-                print("")
-                print("Enter a valid number.")
-                print("")     
+                print("Enter a valid number.")   
         else:
-            print("")
             print("Enter a valid number.")
-            print("")
     elif Parameter_counter == 2:
         add1 = Passwd_long - Parameter1_length
         add2 = Passwd_long - Parameter2_length
         add3 = Passwd_long - Parameter1_length - Parameter2_length
-        if 0<=add1 and 0<=add2 or 0<=add3 :
+        if 0<add1 and 0<add2 and 0<add3 :
             if 6<=Passwd_long<=9:
                 break
             else:
-                print("")
                 print("Enter a valid number.")
-                print("")
         else:
-            print("")
             print("Enter a valid number.")
-            print("")
     elif Parameter_counter == 3:
         add1 = Passwd_long - Parameter1_length
         add2 = Passwd_long - Parameter2_length
@@ -122,17 +108,13 @@ while True:
         add5 = Passwd_long - Parameter1_length - Parameter3_length
         add6 = Passwd_long - Parameter2_length - Parameter3_length
         add7 = Passwd_long - Parameter2_length - Parameter3_length - Parameter1_length
-        if 0<=add1 and 0<=add2 and 0<=add4 or 0<=add3 and 0<=add5 and 0<=add6 or 0<=add7 :
+        if 0<add1 and 0<add2 and 0<add4 and 0<add3 and 0<add5 and 0<add6 and 0<add7 :
             if 6<=Passwd_long<=9:
                 break
             else:
-                print("")
                 print("Enter a valid number.")
-                print("")
         else:
-            print("")
             print("Enter a valid number.")
-            print("")
     elif Parameter_counter == 4:
         add1 = Passwd_long - Parameter1_length
         add2 = Passwd_long - Parameter2_length
@@ -149,21 +131,15 @@ while True:
         add13 = Passwd_long - Parameter3_length - Parameter4_length - Parameter1_length
         add14 = Passwd_long - Parameter4_length - Parameter1_length - Parameter2_length
         add15 = Passwd_long - Parameter1_length - Parameter2_length - Parameter3_length - Parameter4_length
-        if 0<=add1 and 0<=add2 and 0<=add4 and 0<=add8 or 0<=add3 and 0<=add5 and 0<=add6 and 0<=add9 and 0<=add10 and 0<=add11 or 0<=add7 and 0<=add12 and 0<=add13 and 0<=add14 or 0<=add15 :
+        if 0<add1 and 0<add2 and 0<add4 and 0<=add8 and 0<add3 and 0<add5 and 0<add6 and 0<add9 and 0<add10 and 0<add11 and 0<add7 and 0<add12 and 0<add13 and 0<add14 and 0<add15 :
             if 6<=Passwd_long<=9:
                 break
             else:
-                print("")
                 print("Enter a valid number.")
-                print("")
         else:
-            print("")
             print("Enter a valid number.")
-            print("")
     else:
-        print("")
         print("Enter a valid number.")
-        print("")
 
 l1 = [1,2,3,4,5,6,7,8,9,0]
 l2 = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","r","s","t","u","v","w","x","y","z"]
@@ -188,7 +164,6 @@ print("8 = 1,2,3,..,a,b,c,ç,..(Turk)")
 print("9 = 1,2,3,..,A,B,C,Ç,..,a,b,..(Turk)"),
 print("10 = list with selected characters")
 
-print("")
 while True:
     selected_list = int(input("Select a list: "))
     if selected_list == 1 :
@@ -252,6 +227,7 @@ while True:
     else:
         print("Enter a valid parameter.")
 #multiparameter(mpar)
+#(1/0)
 mpar = 0
 
 filename = input("Enter the desired output filename: ")
@@ -367,9 +343,7 @@ while True:
     else:
         print("Enter a valid parameter.")
 if Parameter_counter == 1 and  ok==1 :
-    if add1 == 0:
-        print("why ?")
-    elif add1 == 1:
+    if add1 == 1:
         if lowercap == 0:
             for j1 in selected_list:
                 with open(filename + ".txt", 'a') as f:
@@ -650,10 +624,7 @@ if Parameter_counter == 1 and  ok==1 :
                                                 f.write(passwords1 + '\n'+ passwords2 + '\n'+ passwords3 + '\n' +passwords4 + '\n' + passwords5 + '\n' + passwords6 + '\n' + passwords7 + '\n' + passwords8 + '\n' + passwords9 + '\n' + passwords10 + '\n'+ passwords11 + '\n'+ passwords12 + '\n' +passwords13 + '\n' + passwords14 + '\n' + passwords15 + '\n' + passwords16 + '\n' + passwords17 + '\n' + passwords18 + '\n' )
 ##############################################################    
 elif Parameter_counter == 2 and ok == 1:
-    if add3 == 0 :
-        print("why??")
-        #I cant code anymore..
-    elif add3 == 1 :
+    if add3 == 1 :
         if mpar == 0 :
             if lowercap == 0:
                 for j1 in selected_list:
